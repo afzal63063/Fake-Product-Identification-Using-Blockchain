@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Fake Product Identification</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background: linear-gradient(to right, #4acbf3, #9dd1f3);
+            color: #333;
+        }
+        .navbar {
+            background: #343a40;
+        }
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        .form-group input {
+            border-radius: 10px;
+            padding: 10px;
+        }
+        .btn-register {
+            background: #ff9800;
+            color: white;
+            font-weight: bold;
+            border-radius: 20px;
+            transition: 0.3s;
+        }
+        .btn-register:hover {
+            background: #e68900;
+        }
+        .table {
+            background: white;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .table th, .table td {
+            padding: 15px;
+            text-align: center;
+        }
+        .table-hover tbody tr:hover {
+            background-color: #f1f1f1;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #343a40;
+            color: white;
+            margin-top: 30px;
+        }
+    </style>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark">
+            
+			<div class="container">
+				<a class="navbar-brand" href="#">Fake Product Identification</a>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ml-auto">
+                        <br><br>
+						<li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+						<li class="nav-item"><a class="nav-link" href="manufacturer.html">Manufacturer</a></li>
+						<li class="nav-item"><a class="nav-link" href="seller.html">Seller</a></li>
+						<li class="nav-item"><a class="nav-link" href="consumer.html">Consumer</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+        <br><br><br>
+    <!-- Seller Form -->
+    <div class="container">
+        <h2>Add Seller</h2>
+        <form>
+            <div class="row">
+                <div class="col-md-6 form-group">
+                    <label>Seller Name</label>
+                    <input type="text" class="form-control" id="SellerName" name="SellerName">
+                </div>
+                <div class="col-md-6 form-group">
+                    <label>Seller Brand</label>
+                    <input type="text" class="form-control" id="SellerBrand" name="SellerBrand">
+                </div>
+
+                <div class="col-md-6 form-group">
+                    <label>Seller Code</label>
+                    <input type="text" class="form-control" id="SellerCode" name="SellerCode">
+                </div>
+                <div class="col-md-6 form-group">
+                    <label>Seller Phone Number</label>
+                    <input type="text" class="form-control" id="SellerPhoneNumber" name="SellerPhoneNumber">
+                </div>
+
+                <div class="col-md-6 form-group">
+                    <label>Seller Manager</label>
+                    <input type="text" class="form-control" id="SellerManager" name="SellerManager">
+                </div>
+                <div class="col-md-6 form-group">
+                    <label>Seller Address</label>
+                    <input type="text" class="form-control" id="SellerAddress" name="SellerAddress">
+                </div>
+
+                <div class="col-md-6 form-group">
+                    <label>Manufacturer ID</label>
+                    <input type="text" class="form-control" id="ManufacturerId" name="ManufacturerId">
+                </div>
+            </div>
+
+            <button type="submit" class="btn btn-warning btn-register" id="register">Add the Seller</button>
+        </form>
+    </div>
+
+    <!-- JS Dependencies -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/web3.min.js"></script>
+    <script src="js/truffle-contract.js"></script>
+    <script src="js/sellerApp.js"></script>
+
+</body>
+</html>
